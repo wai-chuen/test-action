@@ -1,0 +1,9 @@
+name: Testing action
+author: Test
+description: n/a
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.lambda_function_prefix }}
+    - ${{ inputs.lambda_function_suffix }}
