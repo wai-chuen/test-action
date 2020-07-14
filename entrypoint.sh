@@ -12,7 +12,7 @@ generate_function_name(){
 add_to_output(){
     generate_function_name $1
     echo "Adding $LAMBDA_FUNCTION_NAME to output"
-    OUTPUT_FUNCTIONS="${OUTPUT_FUNCTIONS}• ${LAMBDA_URL}${LAMBDA_FUNCTION_NAME}%0A "
+    OUTPUT_FUNCTIONS="${OUTPUT_FUNCTIONS}%0A• ${LAMBDA_URL}${LAMBDA_FUNCTION_NAME}"
 }
 
 deploy_lambda_function(){
